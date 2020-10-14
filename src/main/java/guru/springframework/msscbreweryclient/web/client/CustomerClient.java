@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 import guru.springframework.msscbreweryclient.web.model.CustomerDto;
 
 @Component
-@ConfigurationProperties(value = "sfg.brewery", ignoreUnknownFields = false)
+@ConfigurationProperties(prefix = "sfg.brewery", ignoreUnknownFields = false)
 public class CustomerClient {
 	
 	private final RestTemplate restTemplate;
